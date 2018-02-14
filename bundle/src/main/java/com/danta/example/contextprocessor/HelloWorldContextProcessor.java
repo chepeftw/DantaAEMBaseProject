@@ -24,11 +24,11 @@ public class HelloWorldContextProcessor extends AbstractResourceTypeCheckContext
 
     @Override
     public void process(final ExecutionContext executionContext, final ContentModel contentModel) {
-        // if (contentModel.has(TITLE_PROPERTY_KEY)) {
-        //     String titleProp = contentModel.getAsString(TITLE_PROPERTY_KEY);
-        //     titleProp = "World! ... " + titleProp;
-        //     contentModel.set(TITLE_PROPERTY_KEY, titleProp);
-        // }
+        if (contentModel.has(TITLE_PROPERTY_KEY)) {
+            String titleProp = contentModel.getAsString(TITLE_PROPERTY_KEY);
+            titleProp = "World! ... " + titleProp;
+            contentModel.set(TITLE_PROPERTY_KEY, titleProp);
+        }
     }
 
     @Override
