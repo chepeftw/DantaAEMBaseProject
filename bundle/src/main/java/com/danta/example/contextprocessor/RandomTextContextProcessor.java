@@ -30,7 +30,7 @@ public class RandomTextContextProcessor extends AbstractCheckComponentCategoryCo
 
     @Override
     public void process(ExecutionContext executionContext, ContentModel contentModel) throws ProcessException {
-        // contentModel.set(RANDOM_TEXT_KEY, randomString() + randomString() + randomString());
+        contentModel.set(RANDOM_TEXT_KEY, randomString() + randomString() + randomString());
     }
 
     private String randomString() {
